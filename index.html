@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grupo Vocal e Instrumental Atlántico: historia, actuaciones y contacto. Únete a nuestro proyecto musical único y diverso.">
+    <meta name="keywords" content="grupo musical, coral, música atlántica, actuaciones, música española, Noia, Galicia, director coral, Alejandro Guillermo, música vocal">
+    <meta name="author" content="Grupo Vocal e Instrumental Atlántico">
+    <title>Grupo Vocal e Instrumental Atlántico | Música Coral y Actuaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6RVHWESRQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-C6RVHWESRQ');
+    </script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Encabezado con logo e idioma -->
+    <header>
+        <img src="images/logo.png" alt="Logo del Grupo Vocal e Instrumental Atlántico" style="max-width: 150px; display: block; margin: 0 auto;">
+        <h1 id="titulo-grupo">GRUPO VOCAL E INSTRUMENTAL ATLANTICO</h1>
+        <div class="selector-idioma">
+            <label for="idioma">Idioma:</label>
+            <select id="idioma" onchange="cambiarIdioma()">
+                <option value="es" selected>Castellano</option>
+                <option value="gl">Gallego</option>
+                <option value="en">Inglés</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Sección principal con foto y enlaces -->
+    <main>
+        <section class="foto-grupo">
+            <img src="images/Fotoportada.jpg" alt="Foto del grupo musical">
+        </section>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="Curriculum_Atlantico_espanol.html" target="_blank" id="link-grupo">Historial Grupo</a></li>
+                <li><a href="Curriculum_director_espanol.html" target="_blank" id="link-director">Currículum - Director</a></li>
+                <li><a href="Contacto_es.html" target="_blank" id="link-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="videos-actuaciones">
+            <h2 id="titulo-videos">Enlaces a Vídeos de Actuaciones</h2>
+            <ul>
+                <li><a href="https://youtu.be/v0EHwnf0tEY/" target="_blank" id="video1">Love of my life</a></li>
+                <li><a href="https://youtu.be/VfLRgdSHaCA" target="_blank" id="video2">Act. Santiago de Compostela - 30/4/2022</a></li>
+                <li><a href="https://www.facebook.com/100064567334779/videos/1813765946115331/" target="_blank" id="video3">Ave María - Alejandro Guillermo</a></li>
+                <li><a href="https://www.facebook.com/100064567334779/videos/588187676954672/" target="_blank" id="video4">I'm going up a yonder</a></li>
+                <li><a href="https://fb.watch/wA-ReS5hwv/" target="_blank" id="video5">Cuando me ves así</a></li>
+                <li><a href="https://fb.watch/wB08-Fs30y/" target="_blank" id="video6">La Virgen tiene al niño en brazos</a></li>
+                <li><a href="https://fb.watch/wB0ocaCdN0/" target="_blank" id="video7">Canción de cuna costera</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Invitación a contacto -->
+    <p style="text-align: center;">Si te apetece conocernos y unirte a nuestro proyecto musical siéntete libre de <a href="Contacto_es.html">escribirnos</a>.</p>
+
+    <!-- Pie de página -->
+    <footer>
+        <p id="footer-text">&copy; 2024 Grupo Vocal e Instrumental Atlántico. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para cambiar idioma -->
+    <script>
+        function cambiarIdioma() {
+            const idioma = document.getElementById('idioma').value;
+            if (idioma === 'gl') {
+                window.location.href = 'index_gl.html';
+            } else if (idioma === 'en') {
+                window.location.href = 'index_en.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</body>
+
+</html>

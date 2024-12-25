@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6RVHWESRQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-C6RVHWESRQ');
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vocal and Instrumental Group Atlantic - A unique musical project with a diverse and high-quality repertoire.">
+    <meta name="keywords" content="vocal group, Galician music, musical project, Atlantic repertoire, choral music">
+    <meta name="author" content="Vocal and Instrumental Group Atlantic">
+    <title>Vocal and Instrumental Group Atlantic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.png" alt="Logo of the Vocal and Instrumental Group Atlantic" style="max-width: 150px; display: block; margin: 0 auto;">
+        <h1 id="group-title">GRUPO VOCAL E INSTRUMENTAL ATLANTICO</h1>
+        <div class="language-selector">
+            <label for="language">Language:</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="es">Spanish</option>
+                <option value="gl">Galician</option>
+                <option value="en" selected>English</option>
+            </select>
+            <script>
+                function changeLanguage() {
+                    const language = document.getElementById('language').value;
+                    if (language === 'gl') {
+                        window.location.href = 'index_gl.html';
+                    } else if (language === 'es') {
+                        window.location.href = 'index.html';
+                    } else {
+                        window.location.href = 'index_en.html';
+                    }
+                }
+            </script>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Group Photo Section -->
+        <section class="group-photo">
+            <img src="images/Fotoportada.jpg" alt="Group photo of the Vocal and Instrumental Group Atlantic">
+        </section>
+
+        <!-- Navigation Menu -->
+        <nav class="menu">
+            <ul>
+                <li><a href="Curriculum_Atlantico_english.html" target="_blank" id="link-group">Group History</a></li>
+                <li><a href="Curriculum_director_english.html" target="_blank" id="link-director">Conductor's Curriculum</a></li>
+                <li><a href="Contacto_en.html" target="_blank" id="link-contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Videos Section -->
+        <section id="videos-performances">
+            <h2 id="videos-title">Links to Performance Videos</h2>
+            <ul>
+                <li><a href="https://youtu.be/v0EHwnf0tEY/" target="_blank" id="video1">Love of my life</a></li>
+                <li><a href="https://youtu.be/VfLRgdSHaCA" target="_blank" id="video2">Act. Santiago de Compostela - 30/4/2022</a></li>
+                <li><a href="https://www.facebook.com/100064567334779/videos/1813765946115331/" target="_blank" id="video3">Ave María - Alejandro Guillermo</a></li>
+                <li><a href="https://www.facebook.com/100064567334779/videos/588187676954672/" target="_blank" id="video4">I'm going up a yonder</a></li>
+                <li><a href="https://fb.watch/wA-ReS5hwv/" target="_blank" id="video5">Cuando me ves así</a></li>
+                <li><a href="https://fb.watch/wB08-Fs30y/" target="_blank" id="video6">La Virgen tiene al niño en brazos</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Contact and Footer Section -->
+    <p style="text-align: center;">If you feel like getting to know us and joining our musical project, feel free to <a href="contacto_en.html">write to us</a>.</p>
+
+    <footer>
+        <p id="footer-text">&copy; 2024 Vocal and Instrumental Group Atlantic. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
